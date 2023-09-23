@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:country_picker/country_picker.dart';
 import 'package:v_for_v/Pages/authentication_page.dart';
+import 'package:v_for_v/Pages/otp_screen.dart';
 
 class UsePhoneNumberPage extends StatefulWidget {
   @override
@@ -114,7 +115,7 @@ class _UsePhoneNumberPageState extends State<UsePhoneNumberPage> {
                             backgroundColor: Colors.white,
                             textStyle:
                                 TextStyle(fontSize: 16, color: Colors.blueGrey),
-                            bottomSheetHeight: 450,
+                            bottomSheetHeight: 400,
                           ),
                         );
                       },
@@ -208,7 +209,9 @@ class _UsePhoneNumberPageState extends State<UsePhoneNumberPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Handle the button press, e.g., navigate to the next screen.
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => OTPScreen(),
+          )); // Handle the button press, e.g., navigate to the next screen.
         },
         child: const Icon(Icons.arrow_forward),
         backgroundColor: Colors.black, // Set the background color of the button
