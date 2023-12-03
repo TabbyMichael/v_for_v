@@ -104,7 +104,10 @@ class AuthenticationPage extends StatelessWidget {
                     onPressed: () {
                       // Handle Apple button press
                     },
-                    icon: const Icon(Icons.apple),
+                    icon: const Icon(
+                      Icons.apple,
+                      color: Colors.white,
+                    ),
                     label: const Text(
                       'Continue with Apple',
                       style: TextStyle(
@@ -122,7 +125,10 @@ class AuthenticationPage extends StatelessWidget {
                     onPressed: () {
                       // Handle Facebook button press
                     },
-                    icon: const Icon(Icons.facebook),
+                    icon: const Icon(
+                      Icons.facebook,
+                      color: Colors.white,
+                    ),
                     label: const Text(
                       'Continue with Facebook',
                       style: TextStyle(
