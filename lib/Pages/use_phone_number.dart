@@ -213,8 +213,11 @@ class _UsePhoneNumberPageState extends State<UsePhoneNumberPage> {
             builder: (context) => OTPScreen(),
           )); // Handle the button press, e.g., navigate to the next screen.
         },
-        child: const Icon(Icons.arrow_forward),
-        backgroundColor: Colors.black, // Set the background color of the button
+        child: const Icon(
+          Icons.arrow_forward,
+          size: 25,
+        ),
+        backgroundColor: Colors.white, // Set the background color of the button
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation
           .endFloat, // Adjust the location of the button
