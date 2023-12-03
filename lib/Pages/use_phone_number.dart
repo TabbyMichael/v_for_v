@@ -115,7 +115,7 @@ class _UsePhoneNumberPageState extends State<UsePhoneNumberPage> {
                             backgroundColor: Colors.white,
                             textStyle:
                                 TextStyle(fontSize: 16, color: Colors.blueGrey),
-                            bottomSheetHeight: 400,
+                            bottomSheetHeight: 350,
                           ),
                         );
                       },
