@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:v_for_v/Pages/use_phone_number.dart';
 
 class AuthenticationPage extends StatelessWidget {
+  const AuthenticationPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -145,7 +147,7 @@ class AuthenticationPage extends StatelessWidget {
                   ElevatedButton.icon(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => UsePhoneNumberPage(),
+                        builder: (context) => const UsePhoneNumberPage(),
                       )); // Handle Phone button press
                     },
                     icon: const Icon(

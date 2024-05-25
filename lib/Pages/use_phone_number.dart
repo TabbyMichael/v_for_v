@@ -4,6 +4,8 @@ import 'package:v_for_v/Pages/authentication_page.dart';
 import 'package:v_for_v/Pages/otp_screen.dart';
 
 class UsePhoneNumberPage extends StatefulWidget {
+  const UsePhoneNumberPage({super.key});
+
   @override
   _UsePhoneNumberPageState createState() => _UsePhoneNumberPageState();
 }
@@ -26,7 +28,7 @@ class _UsePhoneNumberPageState extends State<UsePhoneNumberPage> {
                 icon: const Icon(Icons.arrow_back),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => AuthenticationPage(),
+                    builder: (context) => const AuthenticationPage(),
                   ));
                 },
               ),
@@ -210,14 +212,14 @@ class _UsePhoneNumberPageState extends State<UsePhoneNumberPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => OTPScreen(),
+            builder: (context) => const OTPScreen(),
           )); // Handle the button press, e.g., navigate to the next screen.
         },
+        backgroundColor: Colors.white,
         child: const Icon(
           Icons.arrow_forward,
           size: 25,
-        ),
-        backgroundColor: Colors.white, // Set the background color of the button
+        ), // Set the background color of the button
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation
           .endFloat, // Adjust the location of the button

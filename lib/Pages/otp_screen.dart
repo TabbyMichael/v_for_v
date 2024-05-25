@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OTPScreen extends StatefulWidget {
+  const OTPScreen({super.key});
+
   @override
   _OTPScreenState createState() => _OTPScreenState();
 }
@@ -123,8 +125,8 @@ class _OTPScreenState extends State<OTPScreen> {
         onPressed: () {
           // Handle the button press, e.g., navigate to the next screen.
         },
-        child: const Icon(Icons.arrow_forward),
-        backgroundColor: Colors.black, // Set the background color of the button
+        backgroundColor: Colors.black,
+        child: const Icon(Icons.arrow_forward), // Set the background color of the button
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
@@ -135,7 +137,7 @@ class _OTPScreenState extends State<OTPScreen> {
 class OtpInput extends StatelessWidget {
   final TextEditingController controller;
   final bool autoFocus;
-  const OtpInput(this.controller, this.autoFocus, {Key? key}) : super(key: key);
+  const OtpInput(this.controller, this.autoFocus, {super.key});
 
   @override
   Widget build(BuildContext context) {
